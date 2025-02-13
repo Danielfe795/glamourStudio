@@ -1,0 +1,110 @@
+body {
+    font-family: Garamond;
+}
+
+.product-detail {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #00000017;
+}
+
+.product-gallery {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+.thumbnails {
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.thumbnail:hover {
+    border: 2px solid #f6b8f8;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #f39c12;
+}
+
+.stars {
+    color: #f39c12;
+    margin-left: 5px;
+}
+
+.price {
+    font-size: 28px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.payment-method:hover {
+    text-decoration: underline;
+}
+
+.delivery-info {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+
+.stock-info {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #28a745;
+}
+
+.quantity {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+.buy-now, .add-to-cart, .added-to-cart {
+    background-color: #f9f9f9;
+    border: solid 4px #f5a8f7;
+    padding: 10px 20px;
+    color: #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 13.3333 px arial, sans-serif;
+}
+
+.buy-now:hover, .add-to-cart:hover {
+    background-color: #ff99ff;
+    color: white;
+}

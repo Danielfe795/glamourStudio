@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fdf0f5;
+}
+
+
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #d898c4;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #333;
+}
+
+.section-bg {
+    background-color: #fff1f6;
+    padding: 60px 0;
+}
+
+.section-title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d47da5;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.about-content, .vision-content, .mision-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content p, .vision-content p, .mision-content p {
+    width: 60%;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-img, .vision-img, .mision-img {
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials li a img {
+    width: 25px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.socials li a img:hover {
+    filter: none;
+}
+
+/* Estilos para la sección de mapa */
+.section-map {
+    padding: 60px 0;
+    background-color: #fff1f6;
+}
+
+.section-map .section-title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d47da5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-map .section-title p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container iframe {
+    width: 80%;
+    height: 450px;
+    border: 3px solid #d47da5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

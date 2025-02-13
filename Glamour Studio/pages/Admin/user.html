@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrativo - Usuario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Admin/Panel.css">
+    <link rel="stylesheet" href="/css/Admin/proveedores.css">
+    
+</head>
+<body>
+    <div class="admin-panel">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="/img/logo.png" alt="Logo">
+                <h2>Menú</h2>
+            </div>
+            <ul class="menu">
+                <ul class="menu">
+                    <li><a href="/pages/Admin/proveedores.html">Proveedores</a></li> 
+                    <li><a href="/pages/Admin/user.html">Usuarios</a></li>
+                    <li><a href="/pages/Admin/products.html">Productos</a></li>
+                    <li><a href="/pages/Admin/services.html">Servicios</a></li>
+                    <li><a href="/pages/User/login.html">Salir</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="/img/icono-header-usuario.png" alt="User Profile">
+                <p>Nancy Restrepo</p>
+                <small>nancyrestrepo@hotm...</small>
+                <a href="#" class="edit-profile">✏️</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Usuarios</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button id="new-record-btn">+ Nuevo Registro</button>
+                </div>
+            </header>
+
+            <!-- Users Table -->
+            <div class="users-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Documenro</th>
+                            <th>Perfil de Registro</th>
+                            <th>Fecha de registro</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="id-copy">41243...</span></td>
+                            <td><img src="/img/icono-header-usuario.png" alt="User Icon"> Juan Soler</td>
+                            <td>10/10/2024</td>
+                            <td>
+                                <button class="edit" data-id="1">✏️</button>
+                                <button class="delete" data-id="1">🗑️</button>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup for new user registration -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Registrar Nuevo Usuario</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="documento">Documento:</label>
+                <input type="text" id="documento" name="documento" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono"> Telefono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+
+                <button type="submit">Registrar</button>
+                <button type="button" id="close-popup">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        // Popup functionality
+        const popup = document.getElementById('popup');
+        const newRecordBtn = document.getElementById('new-record-btn');
+        const closePopupBtn = document.getElementById('close-popup');
+
+        newRecordBtn.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+
+        closePopupBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

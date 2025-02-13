@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.admin-panel {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #111;
+    color: #fff;
+    width: 291px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar .logo img {
+    width: 40px;
+    height: auto;
+}
+
+.sidebar .menu {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.sidebar .menu li {
+    margin: 15px 0;
+}
+
+.sidebar .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar .user-info {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar .user-info img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.sidebar .user-info p {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.sidebar .user-info small {
+    font-size: 12px;
+}
+
+.sidebar .edit-profile {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.users-table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.users-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th, .users-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.users-table th {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #f7f7f7;
+}
+
+.users-table td {
+    border-bottom: 1px solid #eee;
+}
+
+.users-table td img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.users-table .edit, .users-table .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.users-table .edit {
+    color: #333;
+}
+
+.users-table .delete {
+    color: #e74c3c;
+}
+
+.id-copy {
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+     max-height: 80%; /* Limita la altura máxima del popup al 80% de la pantalla */
+     overflow-y: auto; /* Habilita el scroll vertical si el contenido excede el espacio disponible */
+    
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.popup-content form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-content form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content form #close-popup {
+    background-color: #e74c3c;
+}

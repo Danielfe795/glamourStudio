@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(/img/FondoSalon.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px #00000017;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #ffb3d1;
+}
+
+button {
+    background-color: #f0edf0;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff99ff;
+    color: white;
+}
+
+.image-container {
+    flex: 1;
+    background-color: #f0edf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0 15px 15px 0;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.sing-up {
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+select.tipoDocumento {
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 1px #cecece;
+    margin-bottom: 20px;
+    color: #757575;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .image-container { 
+        display: none;
+    }
+}
